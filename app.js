@@ -3,7 +3,7 @@ let express = require('express'),
     app = express(),
     session = require('express-session');
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded()); 
+app.use(bodyParser.urlencoded());
 let cookieParser = require('cookie-parser');
 let path = require('path');
 let util = require("util");
@@ -14,7 +14,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
- 
+
 app.use(function(req, res, next) {
   console.log("Cookies :  "+util.inspect(req.cookies));
   console.log("session :  "+util.inspect(req.session));
@@ -37,7 +37,7 @@ app.post('/login', function(req, res, next){
 	req.session.user = "admin";
 	req.session.password = "1234";
 	req.session.admin = "true";
-	res.send("Login succesful! You should now visit /content for the book. You should visit /parse for the parser.");
+	res.send("Login succesful! You should now visit <a href='/content'>/content</a> for the book. You should visit <a href='/parse'>/parse</a> for the parser.");
     }
     else{
 	res.send("Login failed!");
