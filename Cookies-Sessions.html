@@ -1,0 +1,839 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Sessions en ExpressJS(Inglés) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Cookies-Ejemplos.html" />
+    
+    
+    <link rel="prev" href="Cookies-Administracion.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Homepage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Regex.html">
+            
+                <a href="Regex.html">
+            
+                    
+                    Regex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Cookies-Introduction.html">
+            
+                <a href="Cookies-Introduction.html">
+            
+                    
+                    Cookies
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Cookies-Structure.html">
+            
+                <a href="Cookies-Structure.html">
+            
+                    
+                    Estructura de las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Creation-Cookies.html">
+            
+                <a href="Creation-Cookies.html">
+            
+                    
+                    Creación de las Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Cookies-Seguridad,Seguimiento,Privacidad.html">
+            
+                <a href="Cookies-Seguridad,Seguimiento,Privacidad.html">
+            
+                    
+                    Seguridad, Seguimiento y Privacidad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Cookies-Administracion.html">
+            
+                <a href="Cookies-Administracion.html">
+            
+                    
+                    Administración de Cookies en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="Cookies-Sessions.html">
+            
+                <a href="Cookies-Sessions.html">
+            
+                    
+                    Sessions en ExpressJS(Inglés)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Cookies-Ejemplos.html">
+            
+                <a href="Cookies-Ejemplos.html">
+            
+                    
+                    Ejemplos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="set-get-check-cookie.html">
+            
+                <a href="set-get-check-cookie.html">
+            
+                    
+                    set-get-check-cookie.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="cookie-parser.js.html">
+            
+                <a href="cookie-parser.js.html">
+            
+                    
+                    cookie-parser.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="cookie-session.js.html">
+            
+                <a href="cookie-session.js.html">
+            
+                    
+                    cookie-counter.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="hello-cookie.js.html">
+            
+                <a href="hello-cookie.js.html">
+            
+                    
+                    hello-cookie.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1-BasicRouting.html">
+            
+                <a href="1-BasicRouting.html">
+            
+                    
+                    Direccionamiento Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="2-Routing.html">
+            
+                <a href="2-Routing.html">
+            
+                    
+                    Direccionamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="3-Middleware.html">
+            
+                <a href="3-Middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="4-RouterApiDoc.html">
+            
+                <a href="4-RouterApiDoc.html">
+            
+                    
+                    Documentación Router API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter1/nodejs.html">
+            
+                <a href="chapter1/nodejs.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter2/">
+            
+                <a href="chapter2/">
+            
+                    
+                    Github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="chapter2/creacion-de-usuario.html">
+            
+                <a href="chapter2/creacion-de-usuario.html">
+            
+                    
+                    Creación de usuario
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="chapter2/git.html">
+            
+                <a href="chapter2/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="chapter2/github.html">
+            
+                <a href="chapter2/github.html">
+            
+                    
+                    Cliente de Github (Mac osx y Windows)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="chapter2/hub.html">
+            
+                <a href="chapter2/hub.html">
+            
+                    
+                    Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="chapter2/github.io.html">
+            
+                <a href="chapter2/github.io.html">
+            
+                    
+                    Alojamiento de páginas en github.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="chapter2/gh-pages.html">
+            
+                <a href="chapter2/gh-pages.html">
+            
+                    
+                    Gh-Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter3/">
+            
+                <a href="chapter3/">
+            
+                    
+                    Herramientas de desarrollo
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="chapter3/c9.html">
+            
+                <a href="chapter3/c9.html">
+            
+                    
+                    Cloud9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="chapter3/atom.html">
+            
+                <a href="chapter3/atom.html">
+            
+                    
+                    Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="chapter3/pandoc.html">
+            
+                <a href="chapter3/pandoc.html">
+            
+                    
+                    Pandoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter4/">
+            
+                <a href="chapter4/">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="chapter4/crear-un-usuario-en-gitbooks.html">
+            
+                <a href="chapter4/crear-un-usuario-en-gitbooks.html">
+            
+                    
+                    Creación de usuario
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="chapter4/markdown.html">
+            
+                <a href="chapter4/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Sessions en ExpressJS(Inglés)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sessions-in-expressjs">Sessions in Express.js</h1>
+<p>There are two broad ways of implementing sessions in Express &#x2013; using cookies and using a session store at the backend. Both of them add a new object in the request object named session, which contains the session variables.</p>
+<p>No matter which method you use, Express provides a consistent interface for working with the session data.</p>
+<h2 id="cookie-based-session">Cookie-based Session</h2>
+<p>Using the fact that cookies can store data in the users browser, a sessions API can be implemented using cookies. Express comes with a built-in middleware called cookieSession, which does just that.</p>
+<p>Load the cookieParser middleware with a secret, followed by the cookieSession middleware, before the router middleware. The cookieSession middleware is dependent on the cookieParser middlware because it uses a cookie for storing the session data.</p>
+<p>The cookieParser middleware should be initialized with a secret, because cookieSession needs to generate a signed HttpOnly cookie for storing the session data. If you don&#x2019;t specify a secret for cookieParser, you will need to specify the secret option of cookieSsession.</p>
+<p>The following is the code for enabling sessions in Express using the cookieSession middleware.</p>
+<pre><code>app.use(express.cookieParser(&apos;S3CRE7&apos;));
+app.use(express.cookieSession());
+app.use(app.router);
+</code></pre><p>Although the cookieSession middleware can be initialized without any options, the middleware accepts an options object with the following possible options.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td>Name of the cookie. Defaults to connect.sess</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>Secret for signing the session. Required if cookieParser is not initialized with one.</td>
+</tr>
+<tr>
+<td>cookie</td>
+<td>Session cookie settings. Regular cookie defaults apply.</td>
+</tr>
+<tr>
+<td>proxy</td>
+<td>To trust the reverse proxy or not. Defaults to false.</td>
+</tr>
+</tbody>
+</table>
+<p>Here is an example of initializing cookieSession with some options.</p>
+<pre><code>app.use(express.cookieSession({
+  key: &apos;app.sess&apos;,
+  secret: &apos;SUPERsekret&apos;
+}));
+</code></pre><p>Once the session API is enabled, session variables can be accessed on the session object on the request object &#x2013; <em>req.session</em>.</p>
+<p>Cookie-based sessions work great for simple session data. However, it doesn&#x2019;t work well with large, complicated, and sensitive data because the session data is visible to the user, there is a limit in the size of cookies a browser can store, and multiple large size cookies can affect the performance of the website.</p>
+<p>The limitations in cookie-based sessions can be overcome by sessions based on session stores.</p>
+<h2 id="session-store-based-session">Session Store-based Session</h2>
+<p>A session store is a provision for storing session data in the backend. Sessions based on session stores can store a large amount of data that is well hidden from the user.</p>
+<p>The session middleware provides a way for creating sessions using session stores. Like cookieSession, the session middleware is dependent on the cookieParser middleware for creating a signed HttpOnly cookie.</p>
+<p>Initializing the session middlware is a lot like initializing cookieSession &#x2013; we first load cookieParser with a secret, and load the session middleware, before the router middleware.</p>
+<pre><code>app.use(express.cookieParser(&apos;S3CRE7&apos;));
+app.use(express.session());
+app.use(app.router);
+</code></pre><p>The session middleware accepts an options object which can be used for defining the options of the middleware. The following are the supported options.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>key</td>
+<td>Name of the cookie. Defaults to connect.sid</td>
+</tr>
+<tr>
+<td>store</td>
+<td>Instance of a session store. Defaults to MemoryStore. The session store may supports options of its own.</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>Secret for signing session cookie. Required if not passed to cookieParser().</td>
+</tr>
+<tr>
+<td>cookie</td>
+<td>Session cookie settings. Regular cookie defaults apply.</td>
+</tr>
+<tr>
+<td>proxy</td>
+<td>To trust the reverse proxy or not. Defaults to false.</td>
+</tr>
+</tbody>
+</table>
+<p>Here is an example of initializing the session middleware with some options.</p>
+<pre><code>app.use(express.session({
+  key: &apos;app.sess&apos;,
+  store: new RedisStore,
+  secret: &apos;SEKR37&apos;
+}));
+</code></pre><p>The interface for accessing and working with the session variables remain the same &#x2013; req.session &#x2013; except now the session values reside on the backend.</p>
+<p>Let&#x2019;s explore three popular session stores for Express.</p>
+<h3 id="memorystore">MemoryStore</h3>
+<p>Express comes with a built-in session store called MemoryStore, which is the default when you don&#x2019;t specify one explicitly.</p>
+<p>MemoryStore uses the application RAM for storing session data and works right out of the box, without the need for any database. Seeing how easily it is to set up, you might be tempted to make it the session store of your choice, but it is not recommended to do so because of the following reasons:</p>
+<ol>
+<li>Memory consumption will keep growing with each new session.</li>
+<li>In case the app is restarted for any reason; all session data will be lost.</li>
+<li>Session data cannot be shared by other instances of the app in a cluster.</li>
+</ol>
+<p>In fact, if you try to use MemoryStore in a production environment you will get the following warning.</p>
+<blockquote>
+<p><strong>Warning</strong>: connection.session() MemoryStore is not
+designed for a production environment, as it will leak
+memory, and will not scale past a single process.
+Although MemoryStore is not a scalable solution and is not recommended on production, it makes for a good choice for getting to know the session API quickly and developing the application without the need for any database.</p>
+</blockquote>
+<h3 id="redisstore">RedisStore</h3>
+<p>RedisStore is a popular third-party module which uses Redis for storing session data.</p>
+<p>Install RedisStore in the application directory.</p>
+<pre><code>$ npm install connect-redis
+</code></pre><p>Load the RedisStore module in the app and pass the instance of the Express object to it.</p>
+<pre><code>var express = require(&apos;express&apos;);
+var RedisStore = require(&apos;connect-redis&apos;)(express);
+</code></pre><p>With that, we are ready to use RedisStore as our session store &#x2013; load the session middleware with its store option set to an instance of RedisStore.</p>
+<pre><code>app.use(express.session({ store: new RedisStore }));
+</code></pre><p>RedisStore accepts a configuration object which can be used for specifying various aspects of the session store.</p>
+<pre><code>app.use(express.session({ store: new RedisStore({
+  host:&apos;127.0.0.1&apos;,
+  port:6380,
+  prefix:&apos;sess&apos;
+}), secret: &apos;SEKR37&apos; }));
+</code></pre><p>Once you have set up RedisStore successfully, you can continue to work on the req.session object to create, read, update, and delete session variables as usual; only this time the data is stored on a Redis server &#x2013; accessible by multiple instances of your app and persisting if your app is restarted.</p>
+<h3 id="mongostore">MongoStore</h3>
+<p>Another popular session store uses MongoDB for storing the data and is called MongoStore. The interface is very similar to RedisStore.</p>
+<p>Install MongoStore in the application directory.</p>
+<pre><code>$ npm install connect-mongo
+</code></pre><p>Load the MongoStore module in the app and set an instance of it as the session store for the session middleware.</p>
+<pre><code>var express = require(&apos;express&apos;);
+var MongoStore = require(&apos;connect-mongo&apos;)(express);
+...
+app.use(express.session({
+  store: new MongoStore({
+    db: &apos;myapp&apos;,
+    host: &apos;127.0.0.1&apos;,
+    port: 3355
+  })
+}));
+</code></pre><p>With that, session data will now be stored in MongoDB, but the session interface remains the same &#x2013; the req.session object.</p>
+<h2 id="session-variables">Session Variables</h2>
+<p>Session variables are those variables, which you associate with a user session. These variables are independently set for each user and can be accessed on the session property of the request object &#x2013; req.session.</p>
+<p>While it might look like we are dealing a JavaScript object, it is not completely true; the session variables actually reside in the data store of the session and the JavaScript object only works as a proxy for those values.
+Operations on session variables are is basically working with JavaScript objects. The states of these objects are then updated on the session store.</p>
+<h3 id="setting-session-variables">Setting Session Variables</h3>
+<p>To set a session variable, attach it to the req.session object.</p>
+<pre><code>req.session.name = &apos;Napoleon&apos;;
+</code></pre><p>In case the session variable contains illegal characters, use the substring notation to create it.</p>
+<pre><code>req.session[&apos;primary skill&apos;] = &apos;Dancing&apos;;
+</code></pre><h3 id="reading-session-variables">Reading Session Variables</h3>
+<p>Session variables can be read from the res.session object using either the dot notation or the substring notation.</p>
+<pre><code>var name = req.session.name;
+var primary_skill = req.session[&apos;primary skill&apos;];
+</code></pre><p>If you try to read an undefined property, you will get undefined as expected.</p>
+<h3 id="updating-session-variables">Updating Session Variables</h3>
+<p>Updating a session variable is just about updating the property in the req.session object or overwriting the existing property with a new value.</p>
+<pre><code>req.session.skills.push(&apos;Baking&apos;);
+req.session.name = &apos;Pedro&apos;;
+</code></pre><h3 id="deleting-session-variables">Deleting Session Variables</h3>
+<p>To delete a session variable just delete the property from the req.session object.</p>
+<pre><code>delete req.session.name
+delete req.session[&apos;primary skill&apos;];
+</code></pre><h2 id="deleting-a-session">Deleting a Session</h2>
+<p>We learnt that there are two broad ways of creating sessions &#x2013; using cookieSession and sessionStore. Each session type has its own way of deleting the session.</p>
+<h3 id="deleting-a-cookie-based-session">Deleting a Cookie-based Session</h3>
+<p>To delete a cookie-based session just delete the session object from the request object, or set it to null.</p>
+<pre><code>delete req.session;
+</code></pre><p>or</p>
+<pre><code>req.session = null;
+</code></pre><p>Once the session object is deleted, the session cookie is also deleted from the browser, effectively destroying the session.</p>
+<h3 id="deleting-a-session-store-based-session">Deleting a Session Store-based Session</h3>
+<p>Session store-based sessions do not interpret a missing session object on the request object as the end of a session. If we delete the session object from the request object, it will be recreated from the session store, because the session store decides the state of the session, not JavaScript variables. This also the reason why these sessions are intact even after the app restarts.</p>
+<p>Session store-based sessions has a method called destroy(), which is used for destroying sessions from the session store &#x2013; the proper way of tearing down a session store-based session.</p>
+<pre><code>req.session.destroy();
+</code></pre><p>The destroy() method accepts an optional callback function to be executed after the session is cleared from the store.</p>
+<pre><code>req.session.destroy(function() {
+  res.send(&apos;Session deleted&apos;);
+});
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Cookies-Administracion.html" class="navigation navigation-prev " aria-label="Previous page: Administración de Cookies en ExpressJS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Cookies-Ejemplos.html" class="navigation navigation-next " aria-label="Next page: Ejemplos">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Sessions en ExpressJS(Inglés)","level":"1.3.5","depth":2,"next":{"title":"Ejemplos","level":"1.3.6","depth":2,"path":"Cookies-Ejemplos.md","ref":"Cookies-Ejemplos.md","articles":[{"title":"set-get-check-cookie.js","level":"1.3.6.1","depth":3,"path":"set-get-check-cookie.md","ref":"set-get-check-cookie.md","articles":[]},{"title":"cookie-parser.js","level":"1.3.6.2","depth":3,"path":"cookie-parser.js.md","ref":"cookie-parser.js.md","articles":[]},{"title":"cookie-counter.js","level":"1.3.6.3","depth":3,"path":"cookie-session.js.md","ref":"cookie-session.js.md","articles":[]},{"title":"hello-cookie.js","level":"1.3.6.4","depth":3,"path":"hello-cookie.js.md","ref":"hello-cookie.js.md","articles":[]}]},"previous":{"title":"Administración de Cookies en ExpressJS","level":"1.3.4","depth":2,"path":"Cookies-Administracion.md","ref":"Cookies-Administracion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cookies-Sessions.md","mtime":"2017-03-30T19:38:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T19:43:28.420Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
