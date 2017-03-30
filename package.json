@@ -34,7 +34,6 @@
     "gulp-shell": "^0.5.2",
     "shell-task": "^1.0.0",
     "ejs": "*",
-    "body-parser": "*",
     "cookie-parser": "*"
   },
   "dependencies": {
@@ -44,6 +43,7 @@
     "ejs": "*",
     "express": "^4.14.1",
     "express-session": "^1.15.1",
-    "gulp-shell": "^0.5.2"
+    "gulp-shell": "^0.5.2",
+    "body-parser": "*"
   }
 }
