@@ -39,10 +39,10 @@ Analizador Léxico para Un Subconjunto de JavaScript
 
 | Nombre | Dirección Gitbook |
 | --- | --- |
-| Abián Torres Torres | [alu0100887686/analizador-lexico-para-un-subconjunto-de-javascript](https://alu0100887686.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascript/content/) |
-| Tarun Mohandas Daryanani | [alu0100891782/analizador-lexico-para-un-subconjunto-de-javascript](https://alu0100891782.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascript/content/) |
-| Pedro Miguel Lagüera Cabrera | [plaguera/analizador-lexico-para-un-subconjunto-de-javascript](https://plaguera.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascript/content/) |
-| Joaquín Sanchíz Navarro | [joaquinsanchiz/analizador-lexico-para-un-subconjunto-de-javascript](https://joaquinsanchiz.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascript/content/) |
+| Abián Torres Torres | [alu0100887686/analizador-lexico-para-un-subconjunto-de-javascript](https://alu0100887686.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascri/content/) |
+| Tarun Mohandas Daryanani | [alu0100891782/analizador-lexico-para-un-subconjunto-de-javascript](https://alu0100891782.gitbooks.io/analizador-lexico-javascript/content/) |
+| Pedro Miguel Lagüera Cabrera | [plaguera/analizador-lexico-para-un-subconjunto-de-javascript](https://plaguera.gitbooks.io/analizador-lexico-javascript/content/) |
+| Joaquín Sanchíz Navarro | [joaquinsanchiz/analizador-lexico-para-un-subconjunto-de-javascript](https://joaquinsanchiz.gitbooks.io/analizador-lexico-para-un-subconjunto-de-javascri/content/) |
 
 ---
 
