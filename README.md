@@ -50,7 +50,7 @@ Analizador Léxico para Un Subconjunto de JavaScript
 
 | Nombre | Dirección Heroku |
 | --- | --- |
-| Abián Torres Torres | [Abián Heroku](https://analizador-lexico-abian.herokuapp.com/) |
+| Abián Torres Torres | [Abián Heroku](https://quiet-plains-92188.herokuapp.com/) |
 | Tarun Mohandas Daryanani | [Tarun Heroku](https://analizador-lexico-tarun.herokuapp.com/) |
 | Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://analizador-lexico-pedro.herokuapp.com/) |
 | Joaquín Sanchíz Navarro | [Joaquín Heroku](https://analizador-lexico-joaquin.herokuapp.com/) |
