@@ -8,20 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-PL-1617/estudiar-cookies-y-sessions-en-expressjs-pedro-tarun-joaquin-abian.git"
+    "url": "git+https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git"
   },
   "author": "Abián, Tarun, Pedro, Joaquín",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-PL-1617/estudiar-cookies-y-sessions-en-expressjs-pedro-tarun-joaquin-abian/issues"
+    "url": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git/issues"
   },
   "repogitbook": {
-    "abian": "https://git.gitbook.com/alu0100887686/estudiar-cookies-y-sessions-en-expressjs.git",
-    "joaquin": "https://git.gitbook.com/joaquinsanchiz/estudiar-cookies-y-sessions-en-expressjs.git",
-    "pedro": "https://git.gitbook.com/plaguera/estudiar-cookies-y-sessions-en-expressjs.git",
-    "tarun": "https://git.gitbook.com/alu0100891782/estudiar-cookies-y-sessions-en-expressjs.git"
+    "abian": "https://git.gitbook.com/alu0100887686/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git",
+    "joaquin": "https://git.gitbook.com/joaquinsanchiz/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git",
+    "pedro": "https://git.gitbook.com/plaguera/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git",
+    "tarun": "https://git.gitbook.com/alu0100891782/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian.git"
   },
-  "homepage": "https://github.com/ULL-ESIT-PL-1617/estudiar-cookies-y-sessions-en-expressjs-pedro-tarun-joaquin-abian#readme",
+  "homepage": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-pedro-tarun-joaquin-abian#readme",
   "devDependencies": {
     "async": "^1.4.0",
     "express": "^4.14.1",
