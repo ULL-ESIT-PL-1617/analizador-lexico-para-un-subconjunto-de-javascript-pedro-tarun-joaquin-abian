@@ -58,5 +58,7 @@ app.use('/content', express.static(path.join(__dirname, 'public')));
 
 app.use('/parse', express.static(path.join(__dirname, 'parse')));
 
-app.listen(8081);
-console.log("app running at http://localhost:8081");
+app.set('port', (process.env.PORT || 80))
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})
