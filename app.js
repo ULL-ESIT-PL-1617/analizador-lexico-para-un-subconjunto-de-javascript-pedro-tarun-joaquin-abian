@@ -59,4 +59,4 @@ app.use('/content', express.static(path.join(__dirname, 'public')));
 app.use('/parse', express.static(path.join(__dirname, 'parse')));
 
 app.listen(8081);
-console.log("app running at http://localhost:3000");
+console.log("app running at http://localhost:8081");
